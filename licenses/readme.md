@@ -1,3 +1,3 @@
 # Licenses
 
-[all/v1/](all/v1/)
+[farms-to-freeways/all/v1/](farms-to-freeways/all/v1)
