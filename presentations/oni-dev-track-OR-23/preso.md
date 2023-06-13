@@ -126,5 +126,17 @@ In conclusion, this repository stack is quite different from DSpace, ePrints and
 :::
 
 
+# Tools used here
+
+This presentation: https://github.com/Language-Research-Technology/qa/tree/main/presentations/oni-dev-track-OR-23
+
+The excel-to-crate tooling: https://github.com/Language-Research-Technology/ro-crate-excel
+
+The thing that turns RO-Crate into an OCFL repo: https://github.com/Language-Research-Technology/corpus-tools-ro-crate
+
+The Oni stack, OCFL library, API and Elastic Search: https://github.com/Language-Research-Technology/oni-ui
+
+
+
 
 
