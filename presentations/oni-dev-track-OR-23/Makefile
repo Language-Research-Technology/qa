@@ -1,4 +1,3 @@
 pres:
-	pandoc preso.md -o preso.pptx
+	pandoc preso.md -o 2023-06-13-sefton-introducing-the-oni-stack.pptx
 
-	

@@ -13,23 +13,23 @@ date:
 ---
 
 
-# Introducing the Oni Repository Stack
- 
-A Standards-based OCFL-backed repository platform build on Node.js, Postgres and ElasticSearch
 
-Peter Sefton, Moises Sacal Bonequi, Alvin Sebastian, Mark Raadgever
+
+
+# The architecture
+
+![](oni_diagrams_oni-architecture-2.svg)
 
 ::: notes
+
 
 ### Abstract
 
 In this presentation we will show some of the general purpose repository tooling used to manage repository data for the Language Data Commons of Australia and the Australian Text Analytics Platform. We have a standards-based repository stack which is used to make research data available for human and machine-use. The main part of the stack is “Oni” https://github.com/Arkisto-Platform/oni which builds an access-controlled REST API from an Oxford Common File Layout (OCFL) data store (which consists of data objects which are saved as files-on-disk or in object storage), with data objects are described using the RO-Crate metadata standard. Data is indexed into a postgres-driven API for low-level access, and a full discovery index implemented in ElasticSearch, with the ability to create access portals in your web framework of choice. We will demonstrate rapid creation of large scale repositories using batch tooling, as well as using a metadata entry tool known as Describo to produce RO-Crate linked-data descriptions.
 
-::: 
 
-# The architecture
-
-![](oni_diagrams_oni-architecture-2.svg)
+This slide shows the "small pieces, loosely joined style of the Oni repository" -- it is based on an OCFL data store for digital objects on disk or object storage - with RO-Crate metadata for each object.
+:::
 
 # Some data – ~300 plays from the 1500s
 
@@ -54,17 +54,14 @@ In this recording, we use the RO-Crate Excel tool to generate an Excel workbook 
 
 # Fine tune using Crate-O ...
 
-![](crate-o-org.mp4.gif)
+![](crate-o-org.mov.gif)
 
 ::: notes
 
-Here we see the Crate-O metadata tool (which is a zero-install web application that runs in Chrome and other browsers that support the new FilesystemAPI) being used to add an Orgnization as the Publisher on a crate (not the plays crate).
-
+Here we see the Crate-O metadata tool (which is a zero-install web application that runs in Chrome and other browsers that support the new FilesystemAPI) being used to add an Orgnization as the Affiliation for a Person entity. Having imported this "Context Entity" (that's the RO-Crate term for this type of contextual metadata) it can then be re-used within the crate which we see here as the schema.org `publisher` property is linked to the same orgnization.
 :::
 
-# More Crate-O
 
-![](crate-o.gif)
 
 # Here's where you get Crate-O
 
@@ -94,6 +91,9 @@ This slide shows another script (via a make file that supplies a set of commandl
 
 :::
 
+# This is the OCFL file layout
+
+![](ocfl-screenshot.png)
 
 # Start up 👹 and index stuff
 
