@@ -1,0 +1,7 @@
+# Jekyll configuration for GitHub Pages
+# This controls the site title shown in page headers/breadcrumbs.
+title: LDaCA Test Licence Page
+
+# Project Pages are served from /<repo-name>
+baseurl: "/qa"
+url: "https://language-research-technology.github.io"
