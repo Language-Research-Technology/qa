@@ -1,5 +1,5 @@
-## Dyirbal Test License
+## Dyirbal Test Licence
 
-[Dyirbal License Terms](index.md)
+[Dyirbal Licence Terms](index.md)
 
-This is a test page of what a License page can be. We could also link a file here.
+This is a test page of what a Licence page can be. We could also link a file here.
